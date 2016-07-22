@@ -28,20 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnOutput = new System.Windows.Forms.Button();
             this.fileOpener = new System.Windows.Forms.OpenFileDialog();
             this.txtFile = new System.Windows.Forms.TextBox();
             this.txtOutput = new System.Windows.Forms.TextBox();
             this.btnBrowse = new System.Windows.Forms.Button();
+            this.errProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOutput
             // 
             this.btnOutput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOutput.Location = new System.Drawing.Point(642, 12);
+            this.btnOutput.Location = new System.Drawing.Point(720, 12);
             this.btnOutput.Name = "btnOutput";
-            this.btnOutput.Size = new System.Drawing.Size(122, 23);
+            this.btnOutput.Size = new System.Drawing.Size(150, 23);
             this.btnOutput.TabIndex = 0;
             this.btnOutput.Text = "Output Readable";
             this.btnOutput.UseVisualStyleBackColor = true;
@@ -68,13 +71,13 @@
             this.txtOutput.Multiline = true;
             this.txtOutput.Name = "txtOutput";
             this.txtOutput.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtOutput.Size = new System.Drawing.Size(751, 678);
+            this.txtOutput.Size = new System.Drawing.Size(857, 678);
             this.txtOutput.TabIndex = 2;
             this.txtOutput.WordWrap = false;
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(561, 12);
+            this.btnBrowse.Location = new System.Drawing.Point(579, 12);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(75, 23);
             this.btnBrowse.TabIndex = 3;
@@ -82,17 +85,22 @@
             this.btnBrowse.UseVisualStyleBackColor = true;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
+            // errProvider
+            // 
+            this.errProvider.ContainerControl = this;
+            // 
             // ReadableJsonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(776, 741);
+            this.ClientSize = new System.Drawing.Size(882, 741);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.txtOutput);
             this.Controls.Add(this.txtFile);
             this.Controls.Add(this.btnOutput);
             this.Name = "ReadableJsonForm";
             this.Text = "Readable Json";
+            ((System.ComponentModel.ISupportInitialize)(this.errProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,6 +113,7 @@
         private System.Windows.Forms.TextBox txtFile;
         private System.Windows.Forms.TextBox txtOutput;
         private System.Windows.Forms.Button btnBrowse;
+        private System.Windows.Forms.ErrorProvider errProvider;
     }
 }
 
