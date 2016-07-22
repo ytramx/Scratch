@@ -40,11 +40,10 @@
             // 
             // btnOutput
             // 
-            this.btnOutput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOutput.Location = new System.Drawing.Point(720, 12);
+            this.btnOutput.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnOutput.Location = new System.Drawing.Point(660, 12);
             this.btnOutput.Name = "btnOutput";
-            this.btnOutput.Size = new System.Drawing.Size(150, 23);
+            this.btnOutput.Size = new System.Drawing.Size(126, 23);
             this.btnOutput.TabIndex = 0;
             this.btnOutput.Text = "Output Readable";
             this.btnOutput.UseVisualStyleBackColor = true;
@@ -71,7 +70,7 @@
             this.txtOutput.Multiline = true;
             this.txtOutput.Name = "txtOutput";
             this.txtOutput.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtOutput.Size = new System.Drawing.Size(857, 678);
+            this.txtOutput.Size = new System.Drawing.Size(773, 678);
             this.txtOutput.TabIndex = 2;
             this.txtOutput.WordWrap = false;
             // 
@@ -93,7 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 741);
+            this.ClientSize = new System.Drawing.Size(798, 741);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.txtOutput);
             this.Controls.Add(this.txtFile);
