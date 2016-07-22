@@ -19,6 +19,11 @@ namespace ScratchForm
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Some comments
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             if(fileOpener.ShowDialog() == DialogResult.OK)
@@ -28,6 +33,11 @@ namespace ScratchForm
             }
         }
 
+        /// <summary>
+        /// Some more comments
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOutput_Click(object sender, EventArgs e)
         {
             if (File.Exists(this.txtFile.Text.Trim()))
