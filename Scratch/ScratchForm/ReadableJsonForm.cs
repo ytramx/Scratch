@@ -32,7 +32,7 @@ namespace ScratchForm
             if (File.Exists(this.txtFile.Text.Trim()))
                 this.txtOutput.Text = ReadAndOutput(this.txtFile.Text.Trim());
             else
-                MessageBox.Show("File is not existing!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("File is not the existing!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private string ReadAndOutput(string file)
