@@ -19,6 +19,11 @@ namespace ScratchForm
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Some comments
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             if(fileOpener.ShowDialog() == DialogResult.OK)
