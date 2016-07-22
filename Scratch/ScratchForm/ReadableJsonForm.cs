@@ -24,6 +24,7 @@ namespace ScratchForm
             if(fileOpener.ShowDialog() == DialogResult.OK)
             {
                 this.txtFile.Text = fileOpener.FileName;
+                this.btnOutput_Click(null, null);
             }
         }
 
